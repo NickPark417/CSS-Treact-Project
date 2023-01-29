@@ -423,7 +423,7 @@ nav {
 
 .values__description {
     width: 50%;
-    padding-right: 64px;
+    padding: 32px 64px 32px 0;
 }
 
 .values__header {
@@ -519,4 +519,167 @@ nav {
 
 .values__img {
     width: 100%;
+}
+
+/* Pricing */
+
+#pricing {
+    margin: 0 32px;
+}
+
+.pricing__row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 0;
+}
+
+.pricing__header {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.pricing__title {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    margin: 6px 0;
+}
+
+.pricing__para {
+    margin: 16px 0 64px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.625;
+    color: #7C8BA1;
+    letter-spacing: normal;
+    text-align: center;
+    max-width: 576px;
+}
+
+.pricing__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.pricing__plans {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing__plan {
+    width: calc(100% / 3 - 48px);
+    text-align: center;
+}
+
+.pricing__plan--top-border {
+    width: 100%;
+    height: 8px;
+    margin-bottom: 32px;
+    background: linear-gradient(115deg, #38B2AC, #81E6D9);
+    border-radius: 8px 8px 0 0;
+}
+
+.pricing__plan:last-child .pricing__plan--top-border {
+    background: linear-gradient(115deg, #F56565, #FEB2B2);
+}
+
+.pricing__plan--title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1A202C;
+    letter-spacing: normal;
+}
+
+.pricing__plan--price {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1A202C;
+    letter-spacing: normal;
+    padding: 14px 0;
+}
+
+.pricing__plan--target {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1A202C;
+    letter-spacing: normal;
+    padding-top: 32px;
+    border-top: 2px solid white;
+}
+
+.pricing__plan--duration {
+    font-size: 16px;
+    font-weight: 700;
+    color: #a0aec0;
+    letter-spacing: 0.1em;
+    margin: 3px 0 35px 0;
+}
+
+.pricing__plan--feature {
+    font-size: 16px;
+    font-weight: 500;
+    color: #718096;
+    margin-top: 24px;
+    letter-spacing: normal;
+}
+
+.pricing__plan--feature:last-child {
+    padding-bottom: 32px;
+    border-bottom: 2px solid white;
+}
+
+.pricing__plan--button {
+    padding: 18px 60px;
+    margin: 32px 0;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+    background: linear-gradient(115deg, #38B2AC, #81E6D9);
+    transition: all 300ms;
+}
+
+.pricing__plan--button:hover {
+    scale: 1.01;
+    transform: translateY(-1px);
+    box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing__plan:last-child .pricing__plan--button {
+    background: linear-gradient(115deg, #F56565, #FEB2B2);
+}
+
+/* Pricing Plan (Business) */
+
+.pricing__plan:nth-child(2) {
+    border-radius: 8px;
+    background: linear-gradient(135deg, #4C51BF, #667EEA);
+}
+
+.pricing__plan:nth-child(2) .pricing__plan--top-border {
+    background: none;
+}
+
+.pricing__plan:nth-child(2) .pricing__plan--title, .pricing__plan:nth-child(2) .pricing__plan--price, .pricing__plan:nth-child(2) .pricing__plan--duration, .pricing__plan:nth-child(2) .pricing__plan--target, .pricing__plan:nth-child(2) .pricing__plan--feature {
+    color: white;
+}
+
+.pricing__plan:nth-child(2) .pricing__plan--target {
+    border-top: 2px solid;
+    border-color: #667EEA;
+}
+
+.pricing__plan:nth-child(2) .pricing__plan--feature:last-child {
+    border-bottom: 2px solid;
+    border-color: #667EEA;
+}
+
+.pricing__plan:nth-child(2) .pricing__plan--button {
+    background: white;
+    color: #6415FF;
 }
