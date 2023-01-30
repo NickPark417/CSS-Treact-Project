@@ -145,7 +145,7 @@ nav {
 
 .email__text-box {
     width: 100%;
-    padding: 22px 24px;
+    padding: 22px 42% 22px 24px;
     border-radius: 50px;
     border: 2px solid #00000000;
     font-size: 16px;
@@ -609,7 +609,7 @@ nav {
     color: #1A202C;
     letter-spacing: normal;
     padding-top: 32px;
-    border-top: 2px solid white;
+    border-top: 2px solid #E2E8F0;
 }
 
 .pricing__plan--duration {
@@ -630,7 +630,7 @@ nav {
 
 .pricing__plan--feature:last-child {
     padding-bottom: 32px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid #E2E8F0;
 }
 
 .pricing__plan--button {
@@ -682,4 +682,129 @@ nav {
 .pricing__plan:nth-child(2) .pricing__plan--button {
     background: white;
     color: #6415FF;
+}
+
+/* Testimonials */
+
+#testimonials {
+    margin: 0 32px;
+}
+
+.testimonials__row {
+    width: 100%;
+    max-width: 1280px;
+    padding: 96px 0;
+    display: flex;
+    margin: 0 auto;
+}
+
+.testimonials__img--wrapper {
+    width: 50%;
+    display: flex;
+}
+
+.testimonials__img {
+    width: 100%;
+}
+
+.testimonials__description {
+    width: 50%;
+    padding-left: 64px;
+}
+
+.testimonials__header {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.testimonials__title {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    margin-top: 16px;
+}
+
+.testimonials__para {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.625;
+    color: #7C8BA1;
+    letter-spacing: normal;
+}
+
+.testimonials__reviews {
+    margin-top: 40px;
+}
+
+.review__stars {
+    color: #F6AD55;
+    font-size: 17px;
+}
+
+.review__title {
+    margin-top: 16px;
+    font-size: 20px;
+    letter-spacing: normal;
+}
+
+.review__para {
+    color: #4A5568;
+    font-weight: 500;
+    line-height: 1.625;
+    margin: 16px 0 40px 0;
+    letter-spacing: normal;
+}
+
+.review__bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review__reviewer--container {
+    display: flex;
+    align-items: center;
+}
+
+.reviewer__name {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: normal;
+    padding: 3px 0;
+}
+
+.reviewer__occupation {
+    font-weight: 500;
+    color: #7C8BA1;
+    letter-spacing: normal;
+    padding: 2px 0;
+}
+
+.reviewer__img--wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 24px;
+}
+
+.reviewer__img {
+    width: 100%;
+}
+
+.review__arrow {
+    padding: 15px 16px;
+    margin: 0 12px;
+    color: #6415FF;
+    background-color: #EDF2F7;
+    font-size: 16px;
+}
+
+.review__arrow:hover {
+    color: #5011CC;
+    background-color: #E2E8F0;
 }
