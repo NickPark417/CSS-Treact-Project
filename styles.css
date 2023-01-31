@@ -808,3 +808,156 @@ nav {
     color: #5011CC;
     background-color: #E2E8F0;
 }
+
+/* FAQS */
+
+#faqs {
+    margin: 0 32px;
+}
+
+.faqs__row {
+    width: 100%;
+    max-width: 1280px;
+    padding: 96px 0;
+    margin: 0 auto;
+}
+
+.faqs__description {
+    text-align: center;
+    max-width: 576px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.faqs__header {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 16px;
+}
+
+.faqs__title {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    padding: 6px 0;
+}
+
+.faqs__para {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.625;
+    color: #7C8BA1;
+    letter-spacing: normal;
+}
+
+.faqs__questions {
+    max-width: 896px;
+    margin: 64px auto 0 auto;
+}
+
+.faqs__question {
+    padding: 19px 40px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 300ms;
+    border-radius: 8px;
+}
+
+.faqs__question:hover {
+    color: #1A202C;
+    background-color: #E2E8F0;
+    cursor: pointer;
+}
+
+.question {
+    font-size: 20px;
+    color: #2D3748;
+    font-weight: 600;
+    letter-spacing: normal;
+}
+
+.fa-chevron-down {
+    font-size: 16px;
+    color: #2D3748;
+}
+
+/* Get Started */
+
+#start {
+    margin: 0 32px 96px 32px;
+}
+
+.start__row {
+    width: 100%;
+    max-width: 1280px;
+    padding: 96px 0;
+    margin: 0 auto;
+}
+
+.start__box {
+    background-color: #6415FF;
+    border-radius: 8px;
+    display: flex;
+    padding: 80px 0;
+}
+
+.start__box--wrapper {
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.start__buttons {
+    display: flex;
+    align-items: center;
+}
+
+.start__text {
+    color: #F7FAFC;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    max-width: 480px;
+    letter-spacing: normal;
+}
+
+.start__start {
+    color: #F7FAFC;
+    background-color: #F56565;
+    padding: 23px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 32px;
+    transition: all 300ms;
+}
+
+.start__start:hover {
+    color: #EDF2F7;
+    background-color: #E53E3E;
+}
+
+.start__contact {
+    color: #F7FAFC;
+    background-color: #6415FF;
+    padding: 23px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #A0AEC0;
+    transition: all 300ms;
+}
+
+.start__contact:hover {
+    border-color: #6415FF;
+    color: #6415FF;
+    background-color: #F7FAFC;
+}
