@@ -904,7 +904,7 @@ nav {
     background-color: #6415FF;
     border-radius: 8px;
     display: flex;
-    padding: 80px 0;
+    padding: 96px 0;
 }
 
 .start__box--wrapper {
@@ -960,4 +960,119 @@ nav {
     border-color: #6415FF;
     color: #6415FF;
     background-color: #F7FAFC;
+}
+
+/* Footer */
+
+#footer {
+    background-color: #6415FF;
+}
+
+.footer__container {
+    margin: 0 32px;
+}
+
+.footer__row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 96px 0;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    border-bottom: 2px solid #742CFF;
+}
+
+.link__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.link__section--header {
+    padding-bottom: 14px;
+    color: #F7FAFC;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: normal;
+}
+
+.link {
+    margin-top: 12px;
+    padding: 2px 0;
+    color: #F7FAFC;
+    letter-spacing: normal;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 2px solid #F7FAFC;
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 64px;
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img--wrapper {
+    width: 32px;
+    height: 32px;
+}
+
+.footer__logo--img {
+    width: 100%;
+}
+
+.footer__logo--text {
+    font-size: 20px;
+    font-weight: 900;
+    color: #F7FAFC;
+    margin-left: 8px;
+    letter-spacing: 0.05em;
+}
+
+.footer__copyright {
+    font-size: 16px;
+    font-weight: 500;
+    color: #CBD5E0;
+    letter-spacing: normal;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__social--link {
+    width: 32px;
+    height: 32px;
+    background-color: #F7FAFC;
+    border-radius: 50px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social--link:not(:last-child) {
+    margin-right: 16px;
+}
+
+.fa-brands {
+    font-size: 14px;
+    color: #1A202C;
+}
+
+.fa-facebook-f {
+    padding: 0 3px;
+}
+
+.fa-youtube {
+    padding: 0 -1px;
 }
