@@ -51,6 +51,7 @@ nav {
     height: 44px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -81,13 +82,27 @@ nav {
 
 .nav__link {
     margin: 0 24px;
+    padding: 4px 0;
     font-size: 14px;
     font-weight: 600;
     color: #003E63;
+    border-bottom: 2px solid #00000000;
+    transition: all 300ms;
+}
+
+.nav__link:hover {
+    color: #6415FF;
+    border-color: #6415FF;
 }
 
 .nav__link--login {
     margin-left: 48px;
+}
+
+.nav__menu {
+    font-size: 20px;
+    color: #6415FF;
+    display: none;
 }
 
 .button__sign-up {
@@ -102,10 +117,31 @@ nav {
     color: #6415FF;
 }
 
+@keyframes slide-left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 /* Landing */
 
 #landing {
     margin: 32px 32px 0 32px;
+    animation: slide-left 600ms 500ms;
 }
 
 .header__container {
@@ -204,6 +240,7 @@ nav {
 
 #features {
     margin: 0 32px;
+    animation: slide-right 600ms 500ms;
 }
 
 .features__row {
@@ -274,6 +311,7 @@ nav {
 
 #quality-work {
     margin: 0 32px;
+    animation: slide-left 600ms 500ms;
 }
 
 .quality-work__row {
@@ -334,6 +372,7 @@ nav {
 
 #steps {
     margin: 0 32px;
+    animation: slide-right 600ms 500ms;
 }
 
 .steps__row {
@@ -411,6 +450,7 @@ nav {
 
 #values {
     margin: 0 32px;
+    animation: slide-left 600ms 500ms;
 }
 
 .values__row {
@@ -525,6 +565,7 @@ nav {
 
 #pricing {
     margin: 0 32px;
+    animation: slide-right 600ms 500ms;
 }
 
 .pricing__row {
@@ -688,6 +729,7 @@ nav {
 
 #testimonials {
     margin: 0 32px;
+    animation: slide-left 600ms 500ms;
 }
 
 .testimonials__row {
@@ -737,6 +779,21 @@ nav {
 
 .testimonials__reviews {
     margin-top: 40px;
+    position: relative;
+    height: 352px;
+}
+
+.testimonials__review {
+    position: absolute;
+}
+
+.review__charlotte {
+    top: 0;
+    left: 0;
+}
+
+.review__adam {
+    transform: translateX(-110%);
 }
 
 .review__stars {
@@ -813,6 +870,7 @@ nav {
 
 #faqs {
     margin: 0 32px;
+    animation: slide-right 600ms 500ms;
 }
 
 .faqs__row {
@@ -891,6 +949,7 @@ nav {
 
 #start {
     margin: 0 32px 96px 32px;
+    animation: slide-left 600ms 500ms;
 }
 
 .start__row {
@@ -966,6 +1025,7 @@ nav {
 
 #footer {
     background-color: #6415FF;
+    animation: slide-right 600ms 500ms;
 }
 
 .footer__container {
@@ -999,14 +1059,23 @@ nav {
     letter-spacing: normal;
 }
 
-.link {
+.link__wrapper {
     margin-top: 12px;
     padding: 2px 0;
     color: #F7FAFC;
-    letter-spacing: normal;
     font-size: 14px;
     font-weight: 500;
-    border-bottom: 2px solid #F7FAFC;
+}
+
+.link {
+    letter-spacing: normal;
+    padding-bottom: 4px;
+    transition: all 300ms;
+    border-bottom: 2px solid #00000000;
+}
+
+.link:hover {
+    border-color: #F7FAFC;
 }
 
 .footer__info {
@@ -1058,6 +1127,11 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 300ms;
+}
+
+.footer__social--link:hover {
+    background-color: #CBD5E0;
 }
 
 .footer__social--link:not(:last-child) {
@@ -1075,4 +1149,16 @@ nav {
 
 .fa-youtube {
     padding: 0 -1px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .nav__links {
+        display: none;
+    }
+
+    .nav__menu {
+        display: inline;
+    }
 }
